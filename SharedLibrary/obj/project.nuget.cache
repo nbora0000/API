@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E5+TAFv27eY=",
+  "dgSpecHash": "IPilLswbzlY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nbora\\source\\repos\\API\\SharedLibrary\\SharedLibrary.csproj",
+  "projectFilePath": "C:\\Users\\nbora\\source\\repos\\nbora0000\\ECommerce\\SharedLibrary\\SharedLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nbora\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "C:\\Users\\nbora\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0\\microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
