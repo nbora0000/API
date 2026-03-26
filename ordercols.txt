@@ -1,0 +1,13 @@
+﻿COLUMN_NAME                                                                                                                     
+--------------------------------------------------------------------------------------------------------------------------------
+Id                                                                                                                              
+CustomerName                                                                                                                    
+CustomerEmail                                                                                                                   
+TotalAmount                                                                                                                     
+Currency                                                                                                                        
+Status                                                                                                                          
+Notes                                                                                                                           
+CreatedAt                                                                                                                       
+UpdatedAt                                                                                                                       
+
+(9 rows affected)

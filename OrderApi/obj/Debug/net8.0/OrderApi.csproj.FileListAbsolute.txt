@@ -125,6 +125,7 @@ C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\OrderApi.AssemblyInfo.
 C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\OrderApi.csproj.CoreCompileInputs.cache
 C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\OrderApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\OrderApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\OrderApi.sourcelink.json
 C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -140,4 +141,3 @@ C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\refint\OrderApi.dll
 C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\OrderApi.pdb
 C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\OrderApi.genruntimeconfig.cache
 C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\ref\OrderApi.dll
-C:\Users\nbora\source\repos\API\OrderApi\obj\Debug\net8.0\OrderApi.sourcelink.json

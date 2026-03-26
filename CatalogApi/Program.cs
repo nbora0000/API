@@ -51,7 +51,7 @@ using (var scope = app.Services.CreateScope())
         @"CREATE OR ALTER PROCEDURE [dbo].[sp_GetAllProducts]
             @Category NVARCHAR(200) = NULL
           AS BEGIN SET NOCOUNT ON;
-            SELECT Id, Name, Description, Price, Category, ImageUrl, StockQuantity
+            SELECT Id, Name, Description, Price, Category, ImageUrl, StockQuantity, CreatedAt, UpdatedAt
             FROM [dbo].[Products]
             WHERE (@Category IS NULL OR Category = @Category)
             ORDER BY Name;
@@ -60,21 +60,21 @@ using (var scope = app.Services.CreateScope())
         @"CREATE OR ALTER PROCEDURE [dbo].[sp_GetProductById]
             @ProductId INT
           AS BEGIN SET NOCOUNT ON;
-            SELECT Id, Name, Description, Price, Category, ImageUrl, StockQuantity
+            SELECT Id, Name, Description, Price, Category, ImageUrl, StockQuantity, CreatedAt, UpdatedAt
             FROM [dbo].[Products] WHERE Id = @ProductId;
           END;",
 
         @"CREATE OR ALTER PROCEDURE [dbo].[sp_GetProductsByCategory]
             @Category NVARCHAR(200)
           AS BEGIN SET NOCOUNT ON;
-            SELECT Id, Name, Description, Price, Category, ImageUrl, StockQuantity
+            SELECT Id, Name, Description, Price, Category, ImageUrl, StockQuantity, CreatedAt, UpdatedAt
             FROM [dbo].[Products] WHERE Category = @Category ORDER BY Name;
           END;",
 
         @"CREATE OR ALTER PROCEDURE [dbo].[sp_SearchProducts]
             @SearchTerm NVARCHAR(200)
           AS BEGIN SET NOCOUNT ON;
-            SELECT Id, Name, Description, Price, Category, ImageUrl, StockQuantity
+            SELECT Id, Name, Description, Price, Category, ImageUrl, StockQuantity, CreatedAt, UpdatedAt
             FROM [dbo].[Products]
             WHERE Name LIKE '%' + @SearchTerm + '%' OR Description LIKE '%' + @SearchTerm + '%'
             ORDER BY Name;

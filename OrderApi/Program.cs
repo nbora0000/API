@@ -56,34 +56,32 @@ using (var scope = app.Services.CreateScope())
             @Page     INT          = 1,
             @PageSize INT          = 20
           AS BEGIN SET NOCOUNT ON;
-            SELECT Id, CustomerName, CustomerEmail, TotalAmount, Currency, Status, Notes, CreatedAt, UpdatedAt
+            SELECT [Id], [CustomerName], [CustomerEmail], [TotalAmount], [Currency], [Status], [Notes], [CreatedAt], [UpdatedAt]
             FROM [dbo].[Orders]
-            WHERE (@Status IS NULL OR Status = @Status)
-            ORDER BY CreatedAt DESC
+            WHERE (@Status IS NULL OR [Status] = @Status)
+            ORDER BY [CreatedAt] DESC
             OFFSET ((@Page - 1) * @PageSize) ROWS FETCH NEXT @PageSize ROWS ONLY;
           END;",
 
         @"CREATE OR ALTER PROCEDURE [dbo].[sp_GetOrderById]
             @OrderId UNIQUEIDENTIFIER
           AS BEGIN SET NOCOUNT ON;
-            SELECT Id, CustomerName, CustomerEmail, TotalAmount, Currency, Status, Notes, CreatedAt, UpdatedAt
-            FROM [dbo].[Orders] WHERE Id = @OrderId;
-            SELECT Id, OrderId, ProductId, ProductName, Quantity, UnitPrice
-            FROM [dbo].[OrderItems] WHERE OrderId = @OrderId;
+            SELECT [Id], [CustomerName], [CustomerEmail], [TotalAmount], [Currency], [Status], [Notes], [CreatedAt], [UpdatedAt]
+            FROM [dbo].[Orders] WHERE [Id] = @OrderId;
           END;",
 
         @"CREATE OR ALTER PROCEDURE [dbo].[sp_GetOrdersByStatus]
             @Status NVARCHAR(50)
           AS BEGIN SET NOCOUNT ON;
-            SELECT Id, CustomerName, CustomerEmail, TotalAmount, Currency, Status, Notes, CreatedAt, UpdatedAt
-            FROM [dbo].[Orders] WHERE Status = @Status ORDER BY CreatedAt DESC;
+            SELECT [Id], [CustomerName], [CustomerEmail], [TotalAmount], [Currency], [Status], [Notes], [CreatedAt], [UpdatedAt]
+            FROM [dbo].[Orders] WHERE [Status] = @Status ORDER BY [CreatedAt] DESC;
           END;",
 
         @"CREATE OR ALTER PROCEDURE [dbo].[sp_GetOrderCount]
             @Status NVARCHAR(50) = NULL
           AS BEGIN SET NOCOUNT ON;
-            SELECT COUNT(*) AS TotalCount FROM [dbo].[Orders]
-            WHERE (@Status IS NULL OR Status = @Status);
+            SELECT COUNT(*) AS [TotalCount] FROM [dbo].[Orders]
+            WHERE (@Status IS NULL OR [Status] = @Status);
           END;"
     );
 }

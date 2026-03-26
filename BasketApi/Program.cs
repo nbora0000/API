@@ -51,9 +51,7 @@ using (var scope = app.Services.CreateScope())
         @"CREATE OR ALTER PROCEDURE [dbo].[sp_GetBasketByCustomerId]
             @CustomerId NVARCHAR(450)
           AS BEGIN SET NOCOUNT ON;
-            SELECT CustomerId FROM [dbo].[ShoppingCarts] WHERE CustomerId = @CustomerId;
-            SELECT Id, ProductId, ProductName, UnitPrice, Quantity, ShoppingCartCustomerId
-            FROM [dbo].[CartItems] WHERE ShoppingCartCustomerId = @CustomerId;
+            SELECT CustomerId, CreatedAt, UpdatedAt FROM [dbo].[ShoppingCarts] WHERE CustomerId = @CustomerId;
           END;"
     );
 }

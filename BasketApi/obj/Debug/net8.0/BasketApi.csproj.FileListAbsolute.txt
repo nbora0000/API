@@ -125,6 +125,7 @@ C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\BasketApi.AssemblyInf
 C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\BasketApi.csproj.CoreCompileInputs.cache
 C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\BasketApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\BasketApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\BasketApi.sourcelink.json
 C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -140,4 +141,3 @@ C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\refint\BasketApi.dll
 C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\BasketApi.pdb
 C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\BasketApi.genruntimeconfig.cache
 C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\ref\BasketApi.dll
-C:\Users\nbora\source\repos\API\BasketApi\obj\Debug\net8.0\BasketApi.sourcelink.json

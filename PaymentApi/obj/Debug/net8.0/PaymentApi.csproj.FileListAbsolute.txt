@@ -125,6 +125,7 @@ C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\PaymentApi.AssemblyI
 C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\PaymentApi.csproj.CoreCompileInputs.cache
 C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\PaymentApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\PaymentApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\PaymentApi.sourcelink.json
 C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -140,4 +141,3 @@ C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\refint\PaymentApi.dl
 C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\PaymentApi.pdb
 C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\PaymentApi.genruntimeconfig.cache
 C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\ref\PaymentApi.dll
-C:\Users\nbora\source\repos\API\PaymentApi\obj\Debug\net8.0\PaymentApi.sourcelink.json

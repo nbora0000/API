@@ -1,8 +1,9 @@
+using SharedLibrary.Models;
 using SharedLibrary.Enums;
 
 namespace OrderApi.Models
 {
-    public class Order
+    public class Order : AuditableEntity
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public string CustomerName { get; set; } = string.Empty;
@@ -11,8 +12,6 @@ namespace OrderApi.Models
         public string Currency { get; set; } = "USD";
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
         public string? Notes { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         public ICollection<OrderItem> Items { get; set; } = new List<OrderItem>();
     }

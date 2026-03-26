@@ -1,6 +1,8 @@
+using SharedLibrary.Models;
+
 namespace BasketApi.Models;
 
-public class CartItem
+public class CartItem : AuditableEntity
 {
     public int Id { get; set; }
     public string ProductId { get; set; } = string.Empty;

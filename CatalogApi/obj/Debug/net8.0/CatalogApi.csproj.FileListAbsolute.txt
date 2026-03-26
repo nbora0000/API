@@ -125,6 +125,7 @@ C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\CatalogApi.AssemblyI
 C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\CatalogApi.csproj.CoreCompileInputs.cache
 C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\CatalogApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\CatalogApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\CatalogApi.sourcelink.json
 C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -140,4 +141,3 @@ C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\refint\CatalogApi.dl
 C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\CatalogApi.pdb
 C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\CatalogApi.genruntimeconfig.cache
 C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\ref\CatalogApi.dll
-C:\Users\nbora\source\repos\API\CatalogApi\obj\Debug\net8.0\CatalogApi.sourcelink.json
