@@ -278,6 +278,7 @@ C:\Users\nbora\source\repos\nbora0000\ECommerce\CatalogApi\obj\Debug\net8.0\stat
 C:\Users\nbora\source\repos\nbora0000\ECommerce\CatalogApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\nbora\source\repos\nbora0000\ECommerce\CatalogApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\nbora\source\repos\nbora0000\ECommerce\CatalogApi\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\nbora\source\repos\nbora0000\ECommerce\CatalogApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\nbora\source\repos\nbora0000\ECommerce\CatalogApi\obj\Debug\net8.0\CatalogApi.csproj.Up2Date
 C:\Users\nbora\source\repos\nbora0000\ECommerce\CatalogApi\obj\Debug\net8.0\CatalogApi.dll
 C:\Users\nbora\source\repos\nbora0000\ECommerce\CatalogApi\obj\Debug\net8.0\refint\CatalogApi.dll

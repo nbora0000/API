@@ -278,6 +278,7 @@ C:\Users\nbora\source\repos\nbora0000\ECommerce\BasketApi\obj\Debug\net8.0\stati
 C:\Users\nbora\source\repos\nbora0000\ECommerce\BasketApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\nbora\source\repos\nbora0000\ECommerce\BasketApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\nbora\source\repos\nbora0000\ECommerce\BasketApi\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\nbora\source\repos\nbora0000\ECommerce\BasketApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\nbora\source\repos\nbora0000\ECommerce\BasketApi\obj\Debug\net8.0\BasketApi.csproj.Up2Date
 C:\Users\nbora\source\repos\nbora0000\ECommerce\BasketApi\obj\Debug\net8.0\BasketApi.dll
 C:\Users\nbora\source\repos\nbora0000\ECommerce\BasketApi\obj\Debug\net8.0\refint\BasketApi.dll

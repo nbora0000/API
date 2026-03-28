@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   # ── SQL Server ───────────────────────────────────────────────────────────────
   sqlserver:
@@ -89,6 +91,66 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings__BasketDb: "Server=sqlserver,1433;Database=BasketDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=true;"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -f http://localhost:8080/health || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # ── Inventory API ─────────────────────────────────────────────────────────────
+  inventory-api:
+    build:
+      context: .
+      dockerfile: InventoryApi/Dockerfile
+    container_name: inventory_api
+    ports:
+      - "5005:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__InventoryDb: "Server=sqlserver,1433;Database=InventoryDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=true;"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -f http://localhost:8080/health || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # ── User API ──────────────────────────────────────────────────────────────────
+  user-api:
+    build:
+      context: .
+      dockerfile: UserApi/Dockerfile
+    container_name: user_api
+    ports:
+      - "5006:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__UsersDb: "Server=sqlserver,1433;Database=UsersDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=true;"
+      Jwt__Key: "SUPER_SECRET_KEY_1234567890123456_EXTENDED_KEY_48"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -f http://localhost:8080/health || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # ── Notification API ─────────────────────────────────────────────────────────
+  notification-api:
+    build:
+      context: .
+      dockerfile: NotificationApi/Dockerfile
+    container_name: notification_api
+    ports:
+      - "5007:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
     depends_on:
       sqlserver:
         condition: service_healthy

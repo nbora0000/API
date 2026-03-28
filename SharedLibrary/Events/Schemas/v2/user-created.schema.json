@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UserCreatedEvent v2",
+  "type": "object",
+  "required": ["userId", "email", "fullName", "createdAt", "addresses"],
+  "properties": {
+    "userId": { "type": "string", "format": "uuid" },
+    "email": { "type": "string", "format": "email" },
+    "fullName": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "addresses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["street", "city", "postalCode", "country"],
+        "properties": {
+          "street": { "type": "string" },
+          "city": { "type": "string" },
+          "postalCode": { "type": "string" },
+          "country": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,71 @@
+# GraphQL schema for ECommerce microservices
+
+# Types
+
+type User {
+  id: ID!
+  email: String!
+  name: String
+}
+
+type Product {
+  id: ID!
+  name: String!
+  description: String
+  price: Float!
+  currency: String!
+  availableQuantity: Int!
+}
+
+type CartItem {
+  productId: ID!
+  quantity: Int!
+}
+
+type Cart {
+  id: ID!
+  userId: ID!
+  items: [CartItem!]!
+  totalAmount: Float!
+  currency: String!
+}
+
+type Order {
+  id: ID!
+  userId: ID!
+  items: [CartItem!]!
+  totalAmount: Float!
+  currency: String!
+  status: String!
+  createdAt: String!
+}
+
+# Queries
+
+type Query {
+  user(id: ID!): User
+  product(id: ID!): Product
+  products: [Product!]!
+  cart(userId: ID!): Cart
+  order(id: ID!): Order
+  orders(userId: ID!): [Order!]!
+}
+
+# Mutations
+
+type Mutation {
+  createUser(email: String!, name: String): User!
+  createProduct(name: String!, description: String, price: Float!, currency: String!, quantity: Int!): Product!
+  addToCart(userId: ID!, productId: ID!, quantity: Int!): Cart!
+  removeFromCart(userId: ID!, productId: ID!): Cart!
+  placeOrder(userId: ID!): Order!
+  processPayment(orderId: ID!, paymentMethod: String!): Boolean!
+}
+
+# Subscriptions (events)
+
+type Subscription {
+  orderCreated: Order!
+  paymentSuccess: Order!
+  inventoryReserved: Order!
+}

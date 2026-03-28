@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using OrderApi.Data;
 using OrderApi.Repositories;
 using OrderApi.Services;
+using OrderApi.Services.Outbox;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,10 @@ builder.Services.AddDbContext<OrderDbContext>(options =>
         builder.Configuration.GetConnectionString("OrdersDb"),
         sqlOptions => sqlOptions.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null)
     ));
+
+// Outbox in-memory DB for demo
+builder.Services.AddDbContext<OutboxDbContext>(opt => opt.UseInMemoryDatabase("OutboxDb"));
+builder.Services.AddScoped<OutboxPublisher>();
 
 // ── Repository & Service Layer ────────────────────────────────────────────────
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();

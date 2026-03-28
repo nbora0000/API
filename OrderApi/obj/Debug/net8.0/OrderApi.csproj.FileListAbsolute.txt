@@ -161,6 +161,7 @@ C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\bin\Debug\net8.0\Micros
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
@@ -278,6 +279,7 @@ C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\obj\Debug\net8.0\static
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\obj\Debug\net8.0\OrderApi.csproj.Up2Date
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\obj\Debug\net8.0\OrderApi.dll
 C:\Users\nbora\source\repos\nbora0000\ECommerce\OrderApi\obj\Debug\net8.0\refint\OrderApi.dll
