@@ -77,6 +77,9 @@ walkthrough.md
 # Duplicate solution file (keep ECommerce.sln as primary)
 Microservices.sln
 
+# Unit tests
+*.Tests/
+
 # OS files
 Thumbs.db
 ehthumbs.db
